@@ -31,7 +31,13 @@ class _SplashScreenViewState extends State<SplashScreenView>
     return Scaffold(
       backgroundColor: ColorConstants.basicShade,
       body: Center(
-        child: Image.asset(ImageConstants.LOGO_VECTOR_PNG,),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(ImageConstants.LOGO_VECTOR_PNG,),
+            Text("Expenser", style: TextStyle(color: ColorConstants.mainwhite, fontSize: 36),)
+          ],
+        ),
       ),
     );
   }
