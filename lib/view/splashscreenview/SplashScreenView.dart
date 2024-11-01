@@ -1,5 +1,6 @@
 import 'package:expenser/utils/ColorConstants.dart';
 import 'package:expenser/utils/ImageConstants.dart';
+import 'package:expenser/view/GettingStartedView/GettingStartedView.dart';
 import 'package:expenser/view/loginscreenview/LoginScreenView.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class _SplashScreenViewState extends State<SplashScreenView>
     Future.delayed(Duration(seconds: 3))
         .then((value)
     {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreenView())); // UserNameScreen()
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => GettingStartedView())); // UserNameScreen()
 
     });
     super.initState();
